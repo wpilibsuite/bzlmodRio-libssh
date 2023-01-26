@@ -1,0 +1,25 @@
+module(
+    name = "bzlmodrio-libssh",
+    version = "0.95-1",
+    compatibility_level = 2022,
+)
+
+bazel_dep(name = "platforms", version = "0.0.4")
+bazel_dep(name = "rules_java", version = "5.1.0")
+bazel_dep(name = "rules_bazelrio", version = "0.0.9")
+bazel_dep(name = "rules_roborio_toolchain", version = "2022-1")
+
+setup_bzlmodrio_libssh_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_libssh_cpp_dependencies")
+use_repo(
+    setup_bzlmodrio_libssh_cpp_dependencies,
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_headers",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxx86-64static",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxx86-64static",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64static",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86static",
+)
+
+setup_bzlmodrio_libssh_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_libssh_java_dependencies")
+use_repo(
+    setup_bzlmodrio_libssh_java_dependencies,
+)
