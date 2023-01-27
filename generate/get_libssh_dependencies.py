@@ -6,17 +6,19 @@ from bazelrio_gentool.deps.dependency_container import DependencyContainer
 
 def _default_native_static_platforms():
     platforms = [
+        "linuxarm32",
+        "linuxarm64",
         "linuxx86-64",
-        "osxx86-64",
+        "osxuniversal",
         "windowsx86-64",
         "windowsx86",
     ]
-    return [x + "static" for x in platforms]
+    return [x + "static" for x in platforms] + [x + "staticdebug" for x in platforms]
 
 
 def get_libssh_dependencies():
-    year = "2022"
-    version = "0.95-1"
+    year = "2023"
+    version = "0.95-6"
 
     group_id = f"edu.wpi.first.thirdparty.frc{year}"
 
@@ -28,7 +30,7 @@ def get_libssh_dependencies():
         parent_folder="libssh",
         group_id=group_id,
         headers="headers",
-        sources=None,
+        sources="sources",
         resources=_default_native_static_platforms(),
         has_jni=False,
     )
