@@ -1,7 +1,6 @@
 
-#include "gtest/gtest.h"
 #include <libssh/libssh_version.h>
 
-TEST(BasicTest, BasicTest) {
-    EXPECT_NE(0, LIBSSH_VERSION_INT);
-}
+#include "gtest/gtest.h"
+
+TEST(BasicTest, Basic) { EXPECT_NE(0, LIBSSH_VERSION_INT); }
