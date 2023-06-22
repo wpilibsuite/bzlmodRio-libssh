@@ -1,6 +1,6 @@
 module(
     name = "bzlmodrio-libssh",
-    version = "0.95-6",
+    version = "0.95-7",
     compatibility_level = 2023,
 )
 

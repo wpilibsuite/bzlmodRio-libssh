@@ -15,7 +15,7 @@ def _default_native_static_platforms():
 
 def get_libssh_dependencies():
     year = "2023"
-    version = "0.95-6"
+    version = "0.95-7"
 
     group_id = f"edu.wpi.first.thirdparty.frc{year}"
 
