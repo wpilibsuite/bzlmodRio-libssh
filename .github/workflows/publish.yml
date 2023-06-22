@@ -64,7 +64,7 @@ jobs:
         token: ${{ secrets.AUTO_UPDATE_KEY }}
         reviewers: pjreiniger
         branch: autoupdate/bzlmodrio-libssh_update
-        title: "Auto-update latest bzlmodrio-libssh module release"
+        title: "Auto Update bzlmodrio-libssh module to ${GITHUB_REF_NAME}"
 
     - name: Create BCR Pull Request
       uses: peter-evans/create-pull-request@v4
@@ -76,4 +76,4 @@ jobs:
         token: ${{ secrets.AUTO_UPDATE_KEY }}
         reviewers: pjreiniger
         branch: autoupdate/bzlmodrio-libssh_update
-        title: "Auto-update latest bzlmodrio-libssh module release"
+        title: "Auto Update latest bzlmodrio-libssh to ${GITHUB_REF_NAME}"
