@@ -135,6 +135,13 @@ def __setup_bzlmodrio_libssh_cpp_dependencies(mctx):
     )
     maybe(
         http_archive,
+        "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64static",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsarm64static.zip",
+        sha256 = "d82e6425a4c49781e23a78ff0b88e49dbe686c65ff29eeb3807288d24239fd3d",
+        build_file_content = cc_library_static,
+    )
+    maybe(
+        http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm32staticdebug",
         url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxarm32staticdebug.zip",
         sha256 = "bc2d08e9dda3a47409bee825fe4f62dc6c3b85e90beaf1cac4a6202c0dc1555a",
@@ -173,6 +180,13 @@ def __setup_bzlmodrio_libssh_cpp_dependencies(mctx):
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86staticdebug",
         url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsx86staticdebug.zip",
         sha256 = "95f92fb5f20aaadb9ca825ddd31a733b1a78f16999ad0cc7b931a95da16dd192",
+        build_file_content = cc_library_static,
+    )
+    maybe(
+        http_archive,
+        "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64staticdebug",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsarm64staticdebug.zip",
+        sha256 = "29b0c834a27f11a735d521e1095d589fdc2d705dac9838366f5efb429aaa60a2",
         build_file_content = cc_library_static,
     )
 

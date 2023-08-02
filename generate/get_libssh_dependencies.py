@@ -9,6 +9,7 @@ def _default_native_static_platforms():
         "osxuniversal",
         "windowsx86-64",
         "windowsx86",
+        "windowsarm64",
     ]
     return [x + "static" for x in platforms] + [x + "staticdebug" for x in platforms]
 
