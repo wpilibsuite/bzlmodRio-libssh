@@ -23,6 +23,8 @@ use_repo(
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstatic",
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstaticdebug",
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_sources",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64static",
+    "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64staticdebug",
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64static",
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64staticdebug",
     "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86static",
