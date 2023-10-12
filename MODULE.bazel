@@ -1,7 +1,7 @@
 module(
     name = "bzlmodrio-libssh",
-    version = "0.95-8",
-    compatibility_level = 2023,
+    version = "0.105-1",
+    compatibility_level = 2024,
 )
 
 bazel_dep(name = "platforms", version = "0.0.7")

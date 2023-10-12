@@ -80,113 +80,113 @@ def __setup_bzlmodrio_libssh_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_headers",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-headers.zip",
-        sha256 = "8f8b8698271fe5396d461ee4865f8f4d7f6466bd44d4c004f15fca447c789e97",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-headers.zip",
+        sha256 = "5b7052c4551e8ac3adb183544ccaf6153d5e6503f8562781fd3e40756bcadb4b",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_sources",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-sources.zip",
-        sha256 = "1594c88f32e08e5a7f80273cafd24ac3126635de884367eadc3c133fa375f20c",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-sources.zip",
+        sha256 = "91e27cd409cfe4377dd50f8dfe14074dde0cd0760f5bcb178fc27428eab8e20d",
         build_file_content = cc_library_sources,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm32static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxarm32static.zip",
-        sha256 = "b8a8317b3c9daab48517bdbc0b94440c65f84ba7defed6293babfc786cbb3b50",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxarm32static.zip",
+        sha256 = "db008a36736422d6efafedeb0fae5edc03a6a4b6cef6e0ff1b63710bde113a35",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxarm64static.zip",
-        sha256 = "89cee63dd24822bcbd38b5dc81ad77c5a1c70fb12c74fcc93dea85973a2c10f1",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxarm64static.zip",
+        sha256 = "a4c7876abb87e586eed8aa347645baad44fb76c96985dd581b0eb21a472e4b67",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxx86-64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxx86-64static.zip",
-        sha256 = "0ae55f969f8f9f979b8b32090e8b0b83d8b8717d7cbf1a050bdc15bddb55cbe8",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxx86-64static.zip",
+        sha256 = "f149b01303c2653e971588dd8482a5f82fa72ae3566726b048c96c1a0ed2ce33",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstatic",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-osxuniversalstatic.zip",
-        sha256 = "1f755a31fe443121dc83f93bc7079beef7a39d21782d9f30b62b661b4925f239",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-osxuniversalstatic.zip",
+        sha256 = "b8f6d6525d231628ea8f87d4b7bd0ca69f1efa8c49df62874d91c7095c8e726e",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsx86-64static.zip",
-        sha256 = "17d6bc98204447e90b586c2b41a748ed0380b2a618db3bdfe38137f756f87dea",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsx86-64static.zip",
+        sha256 = "0bff039f1167014f771a012c3bb608f72b6f55cc2a0d6964db664fcf65a0e995",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsx86static.zip",
-        sha256 = "397ed4136809096b7bae00c2ebad9601683ef2ee2fbc3a7def81478c798ab57a",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsx86static.zip",
+        sha256 = "bb282e315322c2e4387994d90f69cb54bebaa22ae21a68bb1d6bd90e140169b8",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsarm64static.zip",
-        sha256 = "d82e6425a4c49781e23a78ff0b88e49dbe686c65ff29eeb3807288d24239fd3d",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsarm64static.zip",
+        sha256 = "fbc7df4d349ed5e693d6fb4aec0617de0a6b9885acfcb8f099a70504362a17ee",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm32staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxarm32staticdebug.zip",
-        sha256 = "bc2d08e9dda3a47409bee825fe4f62dc6c3b85e90beaf1cac4a6202c0dc1555a",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxarm32staticdebug.zip",
+        sha256 = "6783533c3c984996d1b56d8e9a9fba68509b761900e321fcb32ced2dc1c08833",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxarm64staticdebug.zip",
-        sha256 = "83bfcd69b0e9043b267617565d38b70658477688bb73109b44e08299b4667175",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxarm64staticdebug.zip",
+        sha256 = "e07222035e1a6eb097c47041520f0818436a97b9023f59ad2e6f15d5ea9c8ca5",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxx86-64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-linuxx86-64staticdebug.zip",
-        sha256 = "ffad15da34b74b43ccb5e1b7a40d9eb04a68e1af241c0f65a93f28aafdc243bf",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-linuxx86-64staticdebug.zip",
+        sha256 = "224000035a438dbe04d5723201e7cc7ba979b3f178f79f10c17048b0771af9e6",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstaticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-osxuniversalstaticdebug.zip",
-        sha256 = "fd8cbc3b3474e421aa8fa1f673cd21f833cab3d43ea8a239a6dd273d369292b8",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-osxuniversalstaticdebug.zip",
+        sha256 = "6f86a144abe13871530d234a7ed49516a633d4b2ff4c96676fd2d0c2369928d4",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsx86-64staticdebug.zip",
-        sha256 = "c46eebd3d5753f01a0fe005f8f05e146637a6ff4b5b891af4cf552df6121f4cf",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsx86-64staticdebug.zip",
+        sha256 = "63c09aaa16d9145625fc4f583b6a507a9a3e252acbedf1d192fccf0c6ae6ebad",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsx86staticdebug.zip",
-        sha256 = "95f92fb5f20aaadb9ca825ddd31a733b1a78f16999ad0cc7b931a95da16dd192",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsx86staticdebug.zip",
+        sha256 = "72d68cf04ea4c4fca2ba99c596c8f25349aaa9cfe18bb8512d695ce7462cbfc7",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/libssh/0.95-8/libssh-0.95-8-windowsarm64staticdebug.zip",
-        sha256 = "29b0c834a27f11a735d521e1095d589fdc2d705dac9838366f5efb429aaa60a2",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2024/libssh/0.105-1/libssh-0.105-1-windowsarm64staticdebug.zip",
+        sha256 = "6b332a973699a9e0eba6f3f3b51292cb7f29f6614d750fd9d9d2a2f1f0a3bbe9",
         build_file_content = cc_library_static,
     )
 
