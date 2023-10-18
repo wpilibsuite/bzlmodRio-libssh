@@ -32,6 +32,7 @@ def get_libssh_dependencies():
         resources=_default_native_static_platforms(),
         has_jni=False,
     )
+    group.sanitized_version = year + "." + group.sanitized_version
 
     return group
 
