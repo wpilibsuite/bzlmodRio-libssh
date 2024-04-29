@@ -16,7 +16,7 @@ cc_test(
         "no-sandbox",
     ],
     deps = [
-        "@bzlmodrio-libssh//libraries/cpp/libssh",
+        "@bzlmodrio-libssh//libraries/cpp/libssh:static",
         "@googletest//:gtest_main",
     ],
 )
