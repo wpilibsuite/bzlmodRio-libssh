@@ -5,6 +5,12 @@ alias(
 )
 
 alias(
+    name = "header_files",
+    actual = "@bzlmodrio-libssh//private/cpp/libssh:header_files",
+    visibility = ["//visibility:public"],
+)
+
+alias(
     name = "static",
     actual = "@bzlmodrio-libssh//private/cpp/libssh:static",
     target_compatible_with = select({
