@@ -1,14 +1,14 @@
+import argparse
 import os
-from get_libssh_dependencies import get_libssh_dependencies
 
+from bazelrio_gentool.clean_existing_version import clean_existing_version
+from bazelrio_gentool.cli import GenericCliArgs, add_generic_cli
 from bazelrio_gentool.generate_group import generate_group
 from bazelrio_gentool.generate_module_project_files import (
-    generate_module_project_files,
     create_default_mandatory_settings,
+    generate_module_project_files,
 )
-from bazelrio_gentool.clean_existing_version import clean_existing_version
-from bazelrio_gentool.cli import add_generic_cli, GenericCliArgs
-import argparse
+from get_libssh_dependencies import get_libssh_dependencies
 
 
 def main():
