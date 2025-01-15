@@ -14,7 +14,6 @@ alias(
     name = "static",
     actual = "@bzlmodrio-libssh//private/cpp/libssh:static",
     target_compatible_with = select({
-        "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
         "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
