@@ -5,6 +5,8 @@ import .bazelrc-cc
 import .bazelrc-java
 import .bazelrc-buildbuddy
 
+build --incompatible_disallow_empty_glob=1 # Bazel 8 prep
+
 build --test_env=LD_LIBRARY_PATH=.
 build --test_env=DYLD_LIBRARY_PATH=.
 
@@ -38,19 +40,18 @@ build:bookworm64 --platforms=@rules_bzlmodrio_toolchains//platforms/bookworm64
 build:bookworm64 --build_tag_filters=-no-bookworm64
 build:bookworm64 --platform_suffix=bookworm64
 
-# rasppi bullseye
+# raspibullseye32
 build:raspibullseye32 --platforms=@rules_bzlmodrio_toolchains//platforms/raspibullseye32
-build:raspibullseye32 --build_tag_filters=-no-raspi
+build:raspibullseye32 --build_tag_filters=-no-raspibullseye32
 build:raspibullseye32 --platform_suffix=raspibullseye32
 
-# rasppi bookworm
+# raspibookworm32
 build:raspibookworm32 --platforms=@rules_bzlmodrio_toolchains//platforms/raspibookworm32
-build:raspibookworm32 --build_tag_filters=-no-raspi
+build:raspibookworm32 --build_tag_filters=-no-raspibookworm32
 build:raspibookworm32 --platform_suffix=raspibookworm32
 
 # Alias toolchain names to what wpilibsuite uses for CI/Artifact naming
 build:athena --config=roborio
-build:systemcore --config=bookworm64
 build:linuxarm32 --config=raspibookworm32
 build:linuxarm64 --config=bookworm64
 
