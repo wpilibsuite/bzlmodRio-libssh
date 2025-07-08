@@ -1,12 +1,12 @@
 module(
     name = "bzlmodrio-libssh",
-    version = "2024.0.105-1",
+    version = "2024.0.105-1.bcr1",
     compatibility_level = 2024,
 )
 
 bazel_dep(name = "platforms", version = "0.0.9")
-bazel_dep(name = "rules_cc", version = "0.0.9")
-bazel_dep(name = "rules_java", version = "7.6.5")
+bazel_dep(name = "rules_cc", version = "0.1.1")
+bazel_dep(name = "rules_java", version = "8.11.0")
 bazel_dep(name = "rules_bzlmodrio_toolchains", version = "2025-1.bcr4")
 
 setup_bzlmodrio_libssh_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_libssh_cpp_dependencies")
