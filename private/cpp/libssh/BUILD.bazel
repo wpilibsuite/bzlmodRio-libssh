@@ -2,7 +2,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 
 alias(
     name = "header_files",
-    actual = "@bazelrio_edu_wpi_first_thirdparty_frc_libssh_headers//:header_files",
+    actual = "@bazelrio_org_wpilib_thirdparty_libssh_headers//:header_files",
     visibility = ["@bzlmodrio-libssh//:__subpackages__"],
 )
 
@@ -10,22 +10,21 @@ cc_library(
     name = "static",
     linkstatic = 1,
     target_compatible_with = select({
+        "@rules_bzlmodrio_toolchains//constraints/is_bookworm32:bookworm32": ["@platforms//:incompatible"],
         "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
     visibility = ["@bzlmodrio-libssh//:__subpackages__"],
-    deps = ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_headers//:headers"] + select({
-        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxx86-64static//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxx86-64staticdebug//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstatic//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:osx_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_osxuniversalstaticdebug//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:windows_arm64": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64static//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:windows_arm64_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsarm64staticdebug//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:windows_x86_64": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64static//:static_libs"],
-        "@rules_bzlmodrio_toolchains//conditions:windows_x86_64_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_windowsx86-64staticdebug//:static_libs"],
-        "@rules_bzlmodrio_toolchains//constraints/is_bookworm64:bookworm64": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm64static//:static_libs"],
-        "@rules_bzlmodrio_toolchains//constraints/is_bookworm64:bookworm64_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm64staticdebug//:static_libs"],
-        "@rules_bzlmodrio_toolchains//constraints/is_raspibookworm32:raspibookworm32": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm32static//:static_libs"],
-        "@rules_bzlmodrio_toolchains//constraints/is_raspibookworm32:raspibookworm32_debug": ["@bazelrio_edu_wpi_first_thirdparty_frc_libssh_linuxarm32staticdebug//:static_libs"],
+    deps = ["@bazelrio_org_wpilib_thirdparty_libssh_headers//:headers"] + select({
+        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_org_wpilib_thirdparty_libssh_linuxx86-64static//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64_debug": ["@bazelrio_org_wpilib_thirdparty_libssh_linuxx86-64staticdebug//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_org_wpilib_thirdparty_libssh_osxuniversalstatic//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:osx_debug": ["@bazelrio_org_wpilib_thirdparty_libssh_osxuniversalstaticdebug//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:windows_arm64": ["@bazelrio_org_wpilib_thirdparty_libssh_windowsarm64static//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:windows_arm64_debug": ["@bazelrio_org_wpilib_thirdparty_libssh_windowsarm64staticdebug//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:windows_x86_64": ["@bazelrio_org_wpilib_thirdparty_libssh_windowsx86-64static//:static_libs"],
+        "@rules_bzlmodrio_toolchains//conditions:windows_x86_64_debug": ["@bazelrio_org_wpilib_thirdparty_libssh_windowsx86-64staticdebug//:static_libs"],
+        "@rules_bzlmodrio_toolchains//constraints/is_bookworm64:bookworm64": ["@bazelrio_org_wpilib_thirdparty_libssh_linuxarm64static//:static_libs"],
+        "@rules_bzlmodrio_toolchains//constraints/is_bookworm64:bookworm64_debug": ["@bazelrio_org_wpilib_thirdparty_libssh_linuxarm64staticdebug//:static_libs"],
     }),
 )

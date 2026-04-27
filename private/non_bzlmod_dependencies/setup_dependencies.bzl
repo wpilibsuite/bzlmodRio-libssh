@@ -9,30 +9,12 @@ def _setup_toolchains():
     load_toolchains()
 
     native.register_toolchains(
-        "@local_roborio//:macos",
-        "@local_roborio//:linux",
-        "@local_roborio//:windows",
         "@local_systemcore//:macos",
         "@local_systemcore//:linux",
         "@local_systemcore//:windows",
-        "@local_raspi_bullseye_32//:macos",
-        "@local_raspi_bullseye_32//:linux",
-        "@local_raspi_bullseye_32//:windows",
-        "@local_raspi_bookworm_32//:macos",
-        "@local_raspi_bookworm_32//:linux",
-        "@local_raspi_bookworm_32//:windows",
-        "@local_bullseye_32//:macos",
-        "@local_bullseye_32//:linux",
-        "@local_bullseye_32//:windows",
-        "@local_bullseye_64//:macos",
-        "@local_bullseye_64//:linux",
-        "@local_bullseye_64//:windows",
-        "@local_bookworm_32//:macos",
-        "@local_bookworm_32//:linux",
-        "@local_bookworm_32//:windows",
-        "@local_bookworm_64//:macos",
-        "@local_bookworm_64//:linux",
-        "@local_bookworm_64//:windows",
+        "@local_bookworm64//:macos",
+        "@local_bookworm64//:linux",
+        "@local_bookworm64//:windows",
     )
 
 def _setup_cpp_dependencies():
