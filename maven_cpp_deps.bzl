@@ -1,7 +1,9 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
 
-cc_library_headers = """cc_library(
+cc_library_headers = """load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
     name = "headers",
     hdrs = glob(["**"]),
     includes = ["."],
